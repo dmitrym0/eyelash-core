@@ -2,8 +2,10 @@
 include:
   - board: eyelash_corne_left
     shield: nice_view_elemental
+    snippet: zmk-usb-logging
   - board: eyelash_corne_right
     shield: nice_view_elemental
+    snippet: zmk-usb-logging
   - board: eyelash_corne_left
     shield: nice_view_elemental
     snippet: studio-rpc-usb-uart
