@@ -12,7 +12,6 @@
 #include <dt-bindings/zmk/rgb.h>
 
 
-&EXT_POWER { status = "okay"; };
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
