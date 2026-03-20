@@ -4,10 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: kevinpastor
       url-base: https://github.com/kevinpastor
-    - name: zzeneg
-      url-base: https://github.com/zzeneg
-    - name: srwi
-      url-base: https://github.com/srwi
   projects:
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
@@ -19,11 +15,5 @@ manifest:
     - name: nice-view-elemental
       remote: kevinpastor
       revision: main
-    - name: zmk-raw-hid
-      remote: zzeneg
-      revision: main
-    - name: zmk-keypeek-layer-notifier
-      remote: srwi
-      revision: master
   self:
     path: config

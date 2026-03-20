@@ -1,8 +1,8 @@
 ---
 include:
   - board: eyelash_corne_left
-    shield: nice_view raw_hid_adapter
-    snippet: zmk-usb-logging studio-rpc-usb-uart
+    shield: nice_view
+    snippet: zmk-usb-logging
   - board: eyelash_corne_right
     shield: nice_view
     snippet: zmk-usb-logging
