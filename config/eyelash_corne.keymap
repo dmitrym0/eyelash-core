@@ -34,40 +34,40 @@
 / {
     macros {
         // Orange for NUMBER layer (hue 30)
-        num_1: num_1 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(30,100,50)>, <&kp N1>; };
-        num_2: num_2 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(30,100,50)>, <&kp N2>; };
-        num_3: num_3 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(30,100,50)>, <&kp N3>; };
-        num_4: num_4 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(30,100,50)>, <&kp N4>; };
-        num_5: num_5 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(30,100,50)>, <&kp N5>; };
-        num_6: num_6 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(30,100,50)>, <&kp N6>; };
-        num_7: num_7 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(30,100,50)>, <&kp N7>; };
-        num_8: num_8 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(30,100,50)>, <&kp N8>; };
-        num_9: num_9 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(30,100,50)>, <&kp N9>; };
-        num_0: num_0 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(30,100,50)>, <&kp N0>; };
+        num_1: num_1 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(30,100,50) &kp N1>; };
+        num_2: num_2 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(30,100,50) &kp N2>; };
+        num_3: num_3 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(30,100,50) &kp N3>; };
+        num_4: num_4 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(30,100,50) &kp N4>; };
+        num_5: num_5 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(30,100,50) &kp N5>; };
+        num_6: num_6 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(30,100,50) &kp N6>; };
+        num_7: num_7 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(30,100,50) &kp N7>; };
+        num_8: num_8 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(30,100,50) &kp N8>; };
+        num_9: num_9 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(30,100,50) &kp N9>; };
+        num_0: num_0 { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(30,100,50) &kp N0>; };
 
         // Red for SYMBOL layer (hue 0)
-        sym_excl: sym_excl { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp EXCL>; };
-        sym_at: sym_at { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp AT>; };
-        sym_hash: sym_hash { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp HASH>; };
-        sym_dllr: sym_dllr { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp DLLR>; };
-        sym_prcnt: sym_prcnt { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp PRCNT>; };
-        sym_caret: sym_caret { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp CARET>; };
-        sym_amps: sym_amps { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp AMPS>; };
-        sym_astrk: sym_astrk { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp ASTRK>; };
-        sym_lpar: sym_lpar { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp LPAR>; };
-        sym_rpar: sym_rpar { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp RPAR>; };
-        sym_minus: sym_minus { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp MINUS>; };
-        sym_equal: sym_equal { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp EQUAL>; };
-        sym_lbkt: sym_lbkt { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp LBKT>; };
-        sym_rbkt: sym_rbkt { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp RBKT>; };
-        sym_bslh: sym_bslh { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp BSLH>; };
-        sym_grave: sym_grave { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp GRAVE>; };
-        sym_under: sym_under { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp UNDER>; };
-        sym_plus: sym_plus { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp PLUS>; };
-        sym_lbrc: sym_lbrc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp LBRC>; };
-        sym_rbrc: sym_rbrc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp RBRC>; };
-        sym_pipe: sym_pipe { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp PIPE>; };
-        sym_tilde: sym_tilde { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&kp TILDE>; };
+        sym_excl: sym_excl { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp EXCL>; };
+        sym_at: sym_at { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp AT>; };
+        sym_hash: sym_hash { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp HASH>; };
+        sym_dllr: sym_dllr { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp DLLR>; };
+        sym_prcnt: sym_prcnt { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp PRCNT>; };
+        sym_caret: sym_caret { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp CARET>; };
+        sym_amps: sym_amps { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp AMPS>; };
+        sym_astrk: sym_astrk { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp ASTRK>; };
+        sym_lpar: sym_lpar { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp LPAR>; };
+        sym_rpar: sym_rpar { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp RPAR>; };
+        sym_minus: sym_minus { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp MINUS>; };
+        sym_equal: sym_equal { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp EQUAL>; };
+        sym_lbkt: sym_lbkt { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp LBKT>; };
+        sym_rbkt: sym_rbkt { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp RBKT>; };
+        sym_bslh: sym_bslh { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp BSLH>; };
+        sym_grave: sym_grave { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp GRAVE>; };
+        sym_under: sym_under { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp UNDER>; };
+        sym_plus: sym_plus { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp PLUS>; };
+        sym_lbrc: sym_lbrc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp LBRC>; };
+        sym_rbrc: sym_rbrc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp RBRC>; };
+        sym_pipe: sym_pipe { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp PIPE>; };
+        sym_tilde: sym_tilde { compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,50) &kp TILDE>; };
 
     };
 
