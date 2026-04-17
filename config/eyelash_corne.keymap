@@ -76,6 +76,14 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
+
+        td_gui: td_gui {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "GUI/Hyper-Letter Tap Dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LGUI>, <&mo 5>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -110,7 +118,7 @@
 &kp TAB       &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &lt 4 ESCAPE  &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL     &hm_z LSHIFT Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp LSHIFT
-                            &kp LALT  &kp LGUI  &lt 3 SPACE                                               &lt 3 ENTER  &mo_sym  &mo_num
+                            &kp LALT  &td_gui   &lt 3 SPACE                                               &lt 3 ENTER  &mo_sym  &mo_num
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -159,6 +167,18 @@
 &trans  &trans                  &trans                  &trans                  &trans                  &kp LS(LA(LG(LC(G))))             &trans  &trans  &trans  &ext_power EP_ON        &trans                  &trans                  &trans                  &trans                  &trans
 &trans  &trans                  &trans                  &trans                  &trans                  &trans                  &trans            &trans          &trans                  &trans                  &trans                  &trans                  &trans                  &trans
                                                         &trans                  &trans                  &trans                                                    &trans                  &trans                  &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        hyper_letter_layer {
+            display-name = "HYPER-L";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans                 &kp LS(LA(LG(LC(U))))  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
