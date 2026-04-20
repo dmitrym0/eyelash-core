@@ -44,11 +44,11 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
-  - '&td_gui'
+  - {t: '$$mdi:apple-keyboard-command$$', h: HYPER-L}
   - {t: '$$mdi:keyboard-space$$', h: Fn}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
-  - '&mo_sym'
-  - '&mo_num'
+  - $$mdi:symbol$$
+  - $$mdi:numeric$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
