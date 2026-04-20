@@ -60,13 +60,18 @@ draw_config:
     }
 
     /* Variant for tap-dances */
+    rect.tap_dance {
+      stroke: #7a4ad8;
+      stroke-width: 2px;
+      stroke-dasharray: 3 2;
+    }
     .tap_dance.tap {
-      translate: -7px 0px;
-      font-size: 12px;
+      translate: -5px 1px;
+      font-size: 13px;
     }
     .tap_dance.shifted {
-      translate: 7px 17px;
-      font-size: 12px;
+      translate: 12px -20px;
+      font-size: 10px;
       opacity: 1.0;
     }
 
@@ -140,8 +145,10 @@ parse_config:
       tap: $$mdi:numeric$$
       hold: NUMBER
     "&td_gui":
+      type: tap_dance
       tap: $$mdi:apple-keyboard-command$$
       hold: HYPER-L
+      shifted: $$mdi:gesture-tap-hold$$
     # Home rows
     "&hm LEFT_GUI A":
       tap: 'A'
