@@ -47,8 +47,8 @@ layers:
   - {t: '$$mdi:apple-keyboard-command$$', h: HYPER-L}
   - {t: '$$mdi:keyboard-space$$', h: Fn}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
-  - $$mdi:symbol$$
-  - $$mdi:numeric$$
+  - {t: '$$mdi:symbol$$', h: SYMBOL}
+  - {t: '$$mdi:numeric$$', h: NUMBER}
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
