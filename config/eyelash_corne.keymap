@@ -181,7 +181,7 @@
         hyper_letter_layer {
             display-name = "HYPER-L";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans                 &kp LS(LA(LG(LC(U))))  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp LS(LA(LG(LC(Y))))  &kp LS(LA(LG(LC(U))))  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                                  &trans  &trans  &trans
