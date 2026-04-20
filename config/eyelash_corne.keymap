@@ -29,6 +29,12 @@
     trigger-period-ms = <16>;
 };
 
+&mmv_fast {
+    time-to-max-speed-ms = <100>;
+    acceleration-exponent = <1>;
+    trigger-period-ms = <16>;
+};
+
 &soft_off { hold-time-ms = <2000>; };
 
 / {
