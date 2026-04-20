@@ -135,10 +135,10 @@ parse_config:
       hold: $$mdi:navigation-variant$$
     "&mo_sym":
       tap: $$mdi:symbol$$
-      hold: ''
+      hold: SYMBOL
     "&mo_num":
       tap: $$mdi:numeric$$
-      hold: ''
+      hold: NUMBER
     "&td_gui":
       tap: $$mdi:apple-keyboard-command$$
       hold: HYPER-L
