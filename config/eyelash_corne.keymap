@@ -96,6 +96,12 @@
         };
     };
 
+    mmv_fast_input_listener: mmv_fast_input_listener {
+        compatible = "zmk,input-listener";
+        device = <&mmv_fast>;
+        input-processors = <&zip_xy_scaler 2 1>;
+    };
+
     rgb_encoder: rgb_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
