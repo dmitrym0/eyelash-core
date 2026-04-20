@@ -5,6 +5,7 @@ on:
     paths:
       - "config/**"
       - .github/workflows/draw.yml
+      - keymap-drawer/held-overrides.yaml
       - keymap_drawer.config.yaml
 
 jobs:
@@ -15,4 +16,5 @@ jobs:
     with:
       commit_message: "[Draw] ${{ github.event.head_commit.message }}"
       destination: "commit"
+      extra_keymap_yaml: "eyelash_corne:'keymap-drawer/held-overrides.yaml'"
       fail_on_error: ${{ fromJSON(true) }}
