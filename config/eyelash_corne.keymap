@@ -189,5 +189,17 @@
 
             sensor-bindings = <&scroll_encoder>;
         };
+
+        mouse_fast {
+            display-name = "MOUSE-F";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans                    &mkp LCLK             &mkp MCLK             &mkp RCLK             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mmv_fast MOVE_LEFT  &mmv_fast MOVE_DOWN  &mmv_fast MOVE_UP  &mmv_fast MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans                    &trans                &trans                &trans                &trans  &trans
+                        &trans  &trans  &trans                                  &trans                    &trans                &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
     };
 };
