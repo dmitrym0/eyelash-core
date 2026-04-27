@@ -33,6 +33,18 @@
 
 / {
     macros {
+        rgb_off_macro: rgb_off_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&rgb_ug RGB_OFF>;
+        };
+
+        out_usb_macro: out_usb_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_USB>;
+        };
+
         // NUMBER layer with orange RGB (hue 30)
         mo_num: mo_num {
             compatible = "zmk,behavior-macro";
@@ -75,6 +87,24 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
+        };
+
+        hm_z_num: hm_z_num {
+            compatible = "zmk,behavior-hold-tap";
+            display-name = "RGB_OFF/Shift Hold-Tap";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            bindings = <&kp LSHIFT>, <&rgb_off_macro>;
+        };
+
+        hm_z_sym: hm_z_sym {
+            compatible = "zmk,behavior-hold-tap";
+            display-name = "OUT_USB/Shift Hold-Tap";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            bindings = <&kp LSHIFT>, <&out_usb_macro>;
         };
 
         td_gui: td_gui {
@@ -145,7 +175,7 @@
             bindings = <
 &trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
 &trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+&trans  &hm_z_num  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
                                          &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
             >;
 
@@ -157,7 +187,7 @@
             bindings = <
 &trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+&trans  &hm_z_sym  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                     &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
             >;
 
