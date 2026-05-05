@@ -77,6 +77,15 @@
             bindings = <&kp>, <&kp>;
         };
 
+        as_ht: autoshift_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            display-name = "Auto Shift";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
 
         td_gui: td_gui {
             compatible = "zmk,behavior-tap-dance";
@@ -132,10 +141,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB       &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&lt 4 ESCAPE  &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL     &hm_z LSHIFT Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp LSHIFT
-                            &kp LALT  &td_gui   &lt 3 SPACE                                               &lt 3 ENTER  &mo_sym  &mo_num
+&kp TAB       &as_ht LS(Q) Q  &as_ht LS(W) W  &as_ht LS(E) E  &as_ht LS(R) R  &as_ht LS(T) T                            &kp UP                &as_ht LS(Y) Y  &as_ht LS(U) U  &as_ht LS(I) I  &as_ht LS(O) O  &as_ht LS(P) P  &kp BSPC
+&lt 4 ESCAPE  &as_ht LS(A) A  &as_ht LS(S) S  &as_ht LS(D) D  &as_ht LS(F) F  &as_ht LS(G) G              &kp LEFT  &kp ENTER  &kp RIGHT  &as_ht LS(H) H  &as_ht LS(J) J  &as_ht LS(K) K  &as_ht LS(L) L  &as_ht LS(SEMI) SEMI  &as_ht LS(SQT) SQT
+&kp LCTRL     &hm_z LSHIFT Z  &as_ht LS(X) X  &as_ht LS(C) C  &as_ht LS(V) V  &as_ht LS(B) B  &kp SPACE              &kp DOWN              &as_ht LS(N) N  &as_ht LS(M) M  &as_ht LS(COMMA) COMMA  &as_ht LS(DOT) DOT  &as_ht LS(FSLH) FSLH  &kp LSHIFT
+                            &kp LALT  &td_gui  &lt 3 SPACE                                                  &lt 3 ENTER  &mo_sym  &mo_num
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
