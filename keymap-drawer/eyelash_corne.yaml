@@ -2,46 +2,46 @@ layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
   - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
+  - {t: Q, h: Sft+Q}
+  - {t: W, h: Sft+W}
+  - {t: E, h: Sft+E}
+  - {t: R, h: Sft+R}
+  - {t: T, h: Sft+T}
   - $$mdi:arrow-up-bold$$
-  - Y
-  - U
-  - I
-  - O
-  - P
+  - {t: Y, h: Sft+Y}
+  - {t: U, h: Sft+U}
+  - {t: I, h: Sft+I}
+  - {t: O, h: Sft+O}
+  - {t: P, h: Sft+P}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-esc$$', h: HYPER}
-  - A
-  - S
-  - D
-  - F
-  - G
+  - {t: A, h: Sft+A}
+  - {t: S, h: Sft+S}
+  - {t: D, h: Sft+D}
+  - {t: F, h: Sft+F}
+  - {t: G, h: Sft+G}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - {t: H, h: Sft+H}
+  - {t: J, h: Sft+J}
+  - {t: K, h: Sft+K}
+  - {t: L, h: Sft+L}
+  - {t: ;, h: Sft+;, s: ':'}
+  - {t: '''', h: Sft+', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
-  - X
-  - C
-  - V
-  - B
+  - {t: X, h: Sft+X}
+  - {t: C, h: Sft+C}
+  - {t: V, h: Sft+V}
+  - {t: B, h: Sft+B}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - {t: N, h: Sft+N}
+  - {t: M, h: Sft+M}
+  - {t: ',', h: 'Sft+,', s: <}
+  - {t: ., h: Sft+., s: '>'}
+  - {t: /, h: Sft+/, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:apple-keyboard-command$$', h: HYPER-L, s: '$$mdi:gesture-tap-hold$$', type: tap_dance}
