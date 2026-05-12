@@ -2,18 +2,13 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: eyelash
-      url-base: https://github.com/a741725193
     - name: zzeneg
       url-base: https://github.com/zzeneg
     - name: srwi
       url-base: https://github.com/srwi
   projects:
-    - name: zmk-board-eyelash
-      remote: eyelash
-      revision: main
-    - name: zmk-new_corne
-      remote: eyelash
+    - name: eyelash_corne
+      url: https://github.com/a741725193/zmk-new_corne
       revision: main
     - name: zmk
       remote: zmkfirmware
